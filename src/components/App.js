@@ -1,15 +1,26 @@
 import React, { Component } from 'react';
+import { Grid, Segment } from 'semantic-ui-react'
+
+import Content from './Content'
+import Header from './Header'
 
 class App extends Component {
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">AMID UN</h1>
-        </header>
-        <p className="App-intro">
-          Hello world!
-        </p>
+      <div>
+        <Header />
+        <Grid>
+          <Grid.Column width={4}>
+            <Content />
+          </Grid.Column>
+
+          <Grid.Column width={12}>
+            <Segment>
+              Aquí va lo más tanque
+            </Segment>
+          </Grid.Column>
+        </Grid>
       </div>
     );
   }
