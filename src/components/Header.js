@@ -1,17 +1,14 @@
 import React, { Component } from 'react'
-import { Button, Dropdown, Menu } from 'semantic-ui-react'
+import { Button, Dropdown, Menu, Popup } from 'semantic-ui-react'
 
 class Header extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
 
     return (
       <Menu>
         <Menu.Item>
-          <img src='/logo.png' />
+          <img src='/logo.png' alt='¿logo?' />
         </Menu.Item>
         <Menu.Item header>AMID UN</Menu.Item>
 
@@ -26,7 +23,11 @@ class Header extends Component {
           </Dropdown>
 
           <Menu.Item>
-            <Button icon='save' color='teal'/>
+            <Popup
+              trigger={<Button icon='save' color='teal'/>}
+              content='Guardar progreso'
+              position='bottom right'
+            />
           </Menu.Item>
         </Menu.Menu>
       </Menu>
