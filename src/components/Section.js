@@ -31,7 +31,7 @@ class Section extends Component {
           </Menu.Item>
           <Menu.Item name='eval' active={this.state.activeItem === 'eval'}
             onClick={this.handleItemClick} >
-            Metodología
+            Evaluación
           </Menu.Item>
         </Menu>
       </div>
