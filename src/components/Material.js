@@ -1,3 +1,4 @@
+import React from 'react';
 import { List, Embed, Tab } from 'semantic-ui-react'
 
 const ListExampleBulleted = (
@@ -26,7 +27,7 @@ const panes = [
   },
   {
     menuItem: {key: 'pencil', icon: 'pencil', content: 'Actividades'},
-    render: () => <Tab.Pane>{EmbedExampleYouTube}</Tab.Pane>,
+    render: () => <Tab.Pane>Zona de actividades</Tab.Pane>,
   },
   {
     menuItem: {key: 'question', icon: 'question', content: 'Evaluación'},
