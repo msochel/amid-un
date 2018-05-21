@@ -1,5 +1,19 @@
 import React from 'react';
-import { List, Embed, Tab } from 'semantic-ui-react'
+import { List, Embed, Tab, Dropdown } from 'semantic-ui-react'
+
+const options = [
+  { key: 'angular', text: 'Angular', value: 'angular' },
+  { key: 'css', text: 'CSS', value: 'css' },
+  { key: 'design', text: 'Graphic Design', value: 'design' },
+  { key: 'ember', text: 'Ember', value: 'ember' },
+  { key: 'html', text: 'HTML', value: 'html' },
+  { key: 'ia', text: 'Information Architecture', value: 'ia' },
+  { key: 'javascript', text: 'Javascript', value: 'javascript' },
+]
+
+const DropdownExampleMultipleSelection = (
+  <Dropdown placeholder='Lenguajes' fluid multiple selection options={options} />
+)
 
 const ListExampleBulleted = (
   <List bulleted>
@@ -27,7 +41,7 @@ const panes = [
   },
   {
     menuItem: {key: 'pencil', icon: 'pencil', content: 'Actividades'},
-    render: () => <Tab.Pane>Zona de actividades</Tab.Pane>,
+    render: () => <Tab.Pane>Seleccione la opción/es correcta {DropdownExampleMultipleSelection}</Tab.Pane>,
   },
   {
     menuItem: {key: 'question', icon: 'question', content: 'Evaluación'},
