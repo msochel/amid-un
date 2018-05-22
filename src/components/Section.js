@@ -1,39 +1,20 @@
 import React, { Component } from 'react';
-import { Menu } from 'semantic-ui-react'
+
+import {ProgressBar} from 'primereact/components/progressbar/ProgressBar';
+
 
 class Section extends Component {
   constructor (props){
     super(props);
       this.state = {
-        activeItem: 'themes'
+        progress: 50
       }
-  }
-
-  handleItemClick = (e, { name }) => {
-    this.setState({ activeItem: name });
   }
 
   render() {
     return (
       <div>
-        <Menu fluid vertical>
-          <Menu.Item name='themes' active={this.state.activeItem === 'themes'}
-            onClick={this.handleItemClick} >
-            Temas
-          </Menu.Item>
-          <Menu.Item name='method' active={this.state.activeItem === 'method'}
-            onClick={this.handleItemClick} >
-            Metodología
-          </Menu.Item>
-          <Menu.Item name='activ' active={this.state.activeItem === 'activ'}
-            onClick={this.handleItemClick} >
-            Actividades
-          </Menu.Item>
-          <Menu.Item name='eval' active={this.state.activeItem === 'eval'}
-            onClick={this.handleItemClick} >
-            Evaluación
-          </Menu.Item>
-        </Menu>
+        <ProgressBar value={this.state.progress}></ProgressBar>
       </div>
     );
   }

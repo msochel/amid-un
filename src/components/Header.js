@@ -1,36 +1,58 @@
 import React, { Component } from 'react'
-import { Button, Dropdown, Menu, Popup } from 'semantic-ui-react'
+
+import {Button} from 'primereact/components/button/Button';
+import {FileUpload} from 'primereact/components/fileupload/FileUpload';
+import {Menu} from 'primereact/components/menu/Menu';
+import {Sidebar} from 'primereact/components/sidebar/Sidebar';
+import {Toolbar} from 'primereact/components/toolbar/Toolbar';
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { visible: false }
+  }
 
   render() {
+    var items=[
+      {
+        label: 'Progreso',
+        items: [
+          {
+            label: 'Nuevo', icon: 'fa fa-file-o'
+          },
+          {label: 'Abrir', icon: 'fa-folder-open'},
+          {label: 'Guargar', icon: 'fa-save'}
+        ]
+      },
+      {
+        label: 'Opciones',
+        items: [
+          {
+            label: 'Editar información', icon: 'fa fa fa-edit'
+          },
+          {label: 'Cambier tema', icon: 'fa fa-tint'},
+          {label: 'Salir', icon: 'fa fa-power-off'},
+        ]
+      }
+    ];
 
     return (
-      <Menu>
-        <Menu.Item>
+      <Toolbar>
+        <div className="ui-toolbar-group-left">
           <img src='/logo.png' alt='¿logo?' />
-        </Menu.Item>
-        <Menu.Item header>AMID UN</Menu.Item>
-
-        <Menu.Menu position='right'>
-          <Menu.Item name='Nombre'/>
-          <Dropdown item text='Opciones'>
-            <Dropdown.Menu>
-              <Dropdown.Item>Cargar progreso</Dropdown.Item>
-              <Dropdown.Item>Guardar progreso</Dropdown.Item>
-              <Dropdown.Item>Salir</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-
-          <Menu.Item>
-            <Popup
-              trigger={<Button icon='save' color='teal'/>}
-              content='Guardar progreso'
-              position='bottom right'
-            />
-          </Menu.Item>
-        </Menu.Menu>
-      </Menu>
+        </div>
+        <div className="ui-toolbar-group-right">
+          <Menu model={items} popup={true} ref={el => this.menu = el}/>
+          <Button label="Nombre" icon="fa fa-list"
+            onClick={(event) => this.menu.toggle(event)}
+          />
+          <Button icon="fa-plus" onClick={ () => this.setState({visible:true}) }/>
+        </div>
+        <Sidebar visible={this.state.visible} position="bottom"
+          style={{height:'20em'}} onHide={ () => this.setState({visible:false}) }>
+          Menú
+        </Sidebar>
+      </Toolbar>
     )
   }
 }
