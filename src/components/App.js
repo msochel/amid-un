@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Grid, Segment } from 'semantic-ui-react'
 
 import Content from './Content'
 import Header from './Header'
@@ -11,16 +10,17 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Grid>
-          <Grid.Column width={4}>
+        <div className="ui-g">
+          <div className="ui-g-12 ui-md-4">
             <Content />
-          </Grid.Column>
-          <Grid.Column width={12}>
-            <Segment>
-              <Material />
-            </Segment>
-          </Grid.Column>
-        </Grid>
+          </div>
+          <div className="ui-g-12 ui-md-8 ui-g-nopad">
+            <Material />
+          </div>
+          <div className="ui-g-12">
+            Footer
+          </div>
+        </div>
       </div>
     );
   }

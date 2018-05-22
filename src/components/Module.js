@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Accordion } from 'semantic-ui-react'
+import {Accordion,AccordionTab} from 'primereact/components/accordion/Accordion';
 
 import Section from './Section';
 
@@ -27,7 +27,20 @@ class Module extends Component {
     return (
       <div>
         { this.description }
-        <Accordion defaultActiveIndex={0} panels={this.items} styled/>
+        <Accordion activeIndex={0}>
+          <AccordionTab header="Tema 1">
+            <Section/>
+          </AccordionTab>
+          <AccordionTab header="Tema 2" disabled>
+            <Section/>
+          </AccordionTab>
+          <AccordionTab header="Tema 3" disabled>
+            <Section/>
+          </AccordionTab>
+          <AccordionTab header="Tema 4" disabled>
+            <Section/>
+          </AccordionTab>
+        </Accordion>
       </div>
     );
   }

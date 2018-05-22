@@ -1,31 +1,27 @@
 import React, { Component } from 'react';
-import { Accordion } from 'semantic-ui-react'
+import {Accordion,AccordionTab} from 'primereact/components/accordion/Accordion';
 
 import Module from './Module';
 
 class Content extends Component {
-  constructor (props){
-    super(props);
-    this.items = [
-      { title: 'Módulo 1',
-        content: { key:'mod1', content: <Module description="Descripción del Módulo 1" /> }
-      },
-      { title: 'Módulo 2',
-        content: { key:'mod2', content: <Module description="Descripción del Módulo 2" /> }
-      },
-      { title: 'Módulo 3',
-        content: { key:'mod3', content: <Module description="Descripción del Módulo 3" /> }
-      },
-      { title: 'Módulo 4',
-        content: { key:'mod4', content: <Module description="Descripción del Módulo 4" /> }
-      }
-    ]
-  }
 
   render() {
     return (
       <div>
-        <Accordion defaultActiveIndex={0} panels={this.items} styled/>
+        <Accordion activeIndex={0}>
+          <AccordionTab header="Módulo 1">
+            <Module description="Descripción del Módulo 1" />
+          </AccordionTab>
+          <AccordionTab header="Módulo 2">
+            <Module description="Descripción del Módulo 2" />
+          </AccordionTab>
+          <AccordionTab header="Módulo 3">
+            <Module description="Descripción del Módulo 3" />
+          </AccordionTab>
+          <AccordionTab header="Módulo 4">
+            <Module description="Descripción del Módulo 4" />
+          </AccordionTab>
+        </Accordion>
       </div>
     );
   }
