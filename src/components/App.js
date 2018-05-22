@@ -3,6 +3,7 @@ import { Grid, Segment } from 'semantic-ui-react'
 
 import Content from './Content'
 import Header from './Header'
+import Material from './Material'
 
 class App extends Component {
 
@@ -14,10 +15,9 @@ class App extends Component {
           <Grid.Column width={4}>
             <Content />
           </Grid.Column>
-
           <Grid.Column width={12}>
             <Segment>
-              Aquí va lo más tanque
+              <Material />
             </Segment>
           </Grid.Column>
         </Grid>
