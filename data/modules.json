@@ -1,0 +1,233 @@
+{
+    "modules": [
+        {
+            "description": "Ciudadanía, libertad de expresión e información, acceso a la información, discurso democrático y aprendizaje a lo largo de la vida",
+            "units": [
+                {
+                    "description": "Comprendiendo la alfabetización mediática e informacional: una orientación",
+                    "key_topics": [
+                        "Información y medios",
+                        "Importancia de los medios y otros proveedores de información",
+                        "Principales resultados de la alfabetización mediática e informacional"
+                    ],
+                    "learning_objectives": [
+                        "Identificar  los  principales  resultados/elementos  de  aprendizaje  de  la  alfabetización  mediática  e  informaciona",
+                        "Comprender la alfabetización mediática e informacional, su importancia y relevancia en las vidas de los estudiantes y los profesores en la actualidad",
+                        "Explorar el papel de los medios y otros proveedores de información tales como bibliotecas, archivos e Internet",
+                        "Explorar estos roles en una variedad de medios y textos de información"
+                    ],
+                    "pedagogical_approach": [
+                        {
+                            "content": {
+                                "title": "Los múltiples papeles de los medios",
+                                "body": [
+                                    "Los proveedores de información juegan un papel central en los procesos de información y comunicación. Son una forma de comunicar la información, aunque su rol es mucho más amplio que esto. Para propósitos de este Curriculum AMI, los medios se definen (sin tomar en cuenta la naturaleza y las tecnologías utilizadas) como fuentes de información confiable y actualizada creados a través de un proceso editorial determinado por valores periodísticos donde la confiabilidad editorial se pueda atribuir a una organización específica o persona legal. Hasta el punto que los medios son una parte importante del sistema de comunicación de la sociedad, su representación institucional puede mezclarse con una variedad de proveedores de información que no pertenecen a los medios, tales como bibliotecas, museos, archivos, proveedores de información de Internet, otras organizaciones de información y ciudadanos que proveen su propio contenido.",
+                                    "Los medios tienen una serie de roles:",
+                                    [
+                                        "Actúan como canales de información y conocimiento a través de los cuales los ciudadanos se comunican entre ellos y toman decisiones informadas",
+                                        "Facilitan debates informados entre diversos actores",
+                                        "Nos ofrecen mucho de lo que aprendemos sobre el mundo más allá de nuestra experiencia inmediata",
+                                        "Son los medios a través de los cuales la sociedad conoce acerca de si misma y construye un sentido de comunidad",
+                                        "Funcionan como un fiscalizador del gobierno en todas sus formas, promoviendo la transparencia en la vida pública y el escrutinio público de aquellos que están en el poder al exponer la corrupción, mala administración y mal manejo corporativo.",
+                                        "Son facilitadores esenciales de los procesos democráticos y uno de los garantes de las elecciones libres y justas",
+                                        "Son un vehículo para la expresión cultural y la cohesión cultural dentro y entre naciones",
+                                        "Funcionan como un defensor o un actor social en su propio derecho mientras que respetan los valores pluralistas (Adaptado de los MDIs de UNESCO)"
+                                    ]
+                                ]
+                            },
+                            "activities": [
+                                {
+                                    "topic": "Definición de «información» y «medios»",
+                                    "purpose": "Explorar los roles en una variedad de medios de información.",
+                                    "explantation": [
+                                        "Utilice la definición de medios que se expone en la lectura Los múltiples papeles de los medios, y a partir de ella haga una lista de los medios que están presentes en las vidas de los estudiantes y profesores en la actualidad. Luego, elija algunos de los medios que ha identificado para determinar cuáles son los roles y funciones claves que estos medios desempeñan, utilizando para ello la tabla que se muestra a continuación.",
+                                        "Por ejemplo, si el primer medio que eligió es un periódico cultural de su municipio, que tiene como función informar a la audiencia sobre un actividades culturales, ponga el nombre del periódico en la casilla que dice «Medio 1» y marque el círculo frente al rol que dice «Canal de información»."
+                                    ],
+                                    "structure": [
+                                        {
+                                            "columns": [
+                                                "Medio 1", "Medio 2",
+                                                "Medio 4", "Medio 4"
+                                            ],
+                                            "rows": [
+                                                "Canal de información",
+                                                "Facilitador debates informados",
+                                                "Canal de conocimiento",
+                                                "Autoconocimiento y construcción de sentido de comunidad",
+                                                "Fiscalización del gobiernos",
+                                                "Facilitador de los procesos democráticos",
+                                                "Vehículos para la expresión y la cohesión cultural",
+                                                "Defensor o actor social de su propio derecho"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "content": {
+                                "title": "Información sobre los proveedores",
+                                "body": [
+                                    "El uso adecuado de la información que está disponible a través de los medios y varios de los proveedores de información depende de la habilidad de las personas para entender sus necesidades de información, y para localizar, recuperar y evaluar la calidad de la información a la cual puedan tener acceso. Hoy en día, hay una amplia variedad y diversa selección de material de información, contenido y recursos disponibles, especialmente en Internet, que varía mucho en exactitud, confiabilidad y valor. Adicionalmente, esta información existe en una variedad de formas (por Ej. como texto, imagen o estadística, electrónicamente o en impreso) que puede estar disponible a través de depositarios en línea y portales, bibliotecas virtuales o reales y colecciones de documentales, bases de datos, archivos, museos, etc. Sin embargo, el factor más importante es que la calidad de esta información puede variar desde «muy buena» a «muy mala».",
+                                    "Antes de evaluar las fuentes de información, es importante pensar para qué se usa la información. Esto ayudará a identificar fuentes confiables de información. Las preguntas claves podrían ser: ¿Qué fuente o qué tipo de fuente sería la más fiable para que provea información en este caso en particular? ¿Qué fuentes pueden ser más justas, objetivas, que no tengan motivos ocultos, que demuestren control de calidad?",
+                                    "Podemos pensar en la información como algo que tienen los medios y otros proveedores de información como bibliotecas, museos, archivos e Internet. Estos proveedores de información tienen un número de roles, incluyendo:",
+                                    [
+                                        "Informar",
+                                        "Educar",
+                                        "Facilitar los procesos de enseñanza y aprendizaje",
+                                        "fi Proveer acceso a todos los tipos de información (a menudo libre de costos, plural, confiable y sin restricciones)",
+                                        "Servir como una puerta hacia la información",
+                                        "Promover los valores universales y los derechos civiles tales como libertad de expresión e información",
+                                        "Servir como memoria colectiva de la sociedad",
+                                        "Recolectar información",
+                                        "Conservar el patrimonio cultural",
+                                        "Entretener"
+                                    ]
+                                ]
+                            },
+                            "activities": [
+                                {
+                                    "topic": "Definición de «información» y «medios»",
+                                    "purpose": "Explorar los roles en una variedad de textos de información.",
+                                    "explantation": [
+                                        "Utilice la descripción sobre proveedores de información que se expone en la lectura  Información sobre los proveedores, y a partir de ella» seleccione algunas de ellos a  su elección. Luego, procure determinar, utilizando la tabla que se muestra a continuación, qué papel cumplen éstos.",
+                                        "Por ejemplo: Si uno de los proveedores de información que eligió es un Youtuber  (proveedor de videos sobre un tema específico en la plataforma YOUTUBE) que  ofrece videos sobre temas de matemáticas para el nivel de secundaria, ponga el  nombre del proveedor en la casilla que dice «Proveedor 1» y marque el círculo frente  al rol que dice «Facilitar los procesos de enseñanza y aprendizaje»."
+                                    ],
+                                    "structure": [
+                                        {
+                                            "columns": [
+                                                "Proveedor 1", "Proveedor 2",
+                                                "Proveedor 4", "Proveedor 4"
+                                            ],
+                                            "rows": [
+                                                "Informar",
+                                                "Educar",
+                                                "Facilitar los procesos de enseñanza y aprendizaje Proveer acceso a todos los tipos de información (a menudo libre de costos, plural, confiable y sin restricciones)",
+                                                "Servir como una puerta hacia la información",
+                                                "Promover los valores universales y los derechos civiles tales como libertad de expresión e información",
+                                                "Servir como memoria colectiva de la sociedad Recolectar información",
+                                                "Conservar el patrimonio cultural",
+                                                "Entretener"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "topic": "Importancia de los medios y otros proveedores de información",
+                                    "purpose": "Explorar el papel de los medios y otros proveedores de información tales como bibliotecas, archivos e Internet",
+                                    "explantation": [
+                                        "Haga una inspección de algunas bibliotecas de colegios/universidades o bibliotecas  públicas para encontrar libros y otros recursos disponibles que según su criterio  provean información sobre democracia, sobre otros lugares del mundo, sobre distintas culturas o sobre la vida social y económica, etc.",
+                                        "Para estas bibliotecas inspeccionadas, consulte y responda las siguientes preguntas:"
+                                    ],
+                                    "structure": [
+                                        {
+                                            "questions": [
+                                                "¿Quién decide qué libros deben ser incluidos en la biblioteca y cuáles deben ser excluidos?",
+                                                "¿Quién decide que recursos y con qué nivel deben ser asignados a las bibliotecas?",
+                                                "¿Quién decide qué libros son más importantes que otros?",
+                                                "¿Las bibliotecas cumplen son sus propósitos?"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "content": {
+                                "title": "La importancia que tiene AMI para los ciudadanos",
+                                "body": [
+                                    "La Alfabetización Mediática e Informacional (AMI) une disciplinas que antes se mantenían separadas y distintas. AMI se ocupa de que las personas comprendan la importancia de los medios y otros proveedores de información a fin de que:",
+                                    [
+                                        "tomen decisiones informadas",
+                                        "aprendan sobre el mundo que les rodea",
+                                        "construyan un sentido de comunidad",
+                                        "mantengan un discurso público, y",
+                                        "se comprometan a aprender a lo largo de toda la vida"
+                                    ],
+                                    "Más allá, AMI debería estimular a que los ciudadanos se conviertan en productores activos de información e innovadores de los medios y productos de información, así como que sean pensadores críticos. AMI debería incentivar que usen los medios nuevos y tradicionales para la auto-expresión, creatividad y mayor participación en la democracia de sus países y en la red de información a nivel global."
+                                ]
+                            },
+                            "activities": [
+                                {
+                                    "topic": null,
+                                    "purpose": null,
+                                    "explantation": [],
+                                    "structure": [
+                                        {
+                                            "columns": [],
+                                            "rows": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }                        
+                    ],
+                    "unit_evaluation": {
+                        "body": [
+                            "La edición virtual del periódico El Espectador, del 17 de mayo de 2018, presenta un artículo titulado «Cúcuta, un oasis para los venezolanos antes de las presidenciales en su país» (goo.gl/bvwXeY). Uno de los apartes del articulo expresa:",
+                            "\"Los cruces fronterizos del departamento colombiano de Norte de Santander, principal conexión con Venezuela, son testigos de la odisea de las cerca de 50.000 personas que entran y salen de ese país a diario por estas fechas, unos 15.000 más de lo habitual\".",
+                            "\"Lo hacen para abastecerse de alimentos, medicinas y artículos de higiene para los días venideros porque, según dicen, no saben lo que pueda pasar después de las elecciones presidenciales del domingo 20, por lo cual la frontera se cerrará antes\".",
+                            "¿Qué rol cumple el texto?:"
+                        ],
+                        "questions": {
+                            "options": [
+                                {"text": "Entretener", "right": false},
+                                {"text": "Proveer acceso a todos los tipos de información", "right": false},
+                                {"text": "Servir como una puerta hacia la información", "right": false},
+                                {"text": "Promover los valores universales y los derechos civiles", "right": false},
+                                {"text": "Informar", "right": false},
+                                {"text": "Educar", "right": false},
+                                {"text": "Facilitar los procesos de enseñanza y aprendizaje", "right": false},
+                                {"text": "Servir como memoria colectiva de la sociedad", "right": false},
+                                {"text": "Recolectar información", "right": false},
+                                {"text": "Conservar el patrimonio cultural", "right": false}
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "description": null,
+            "units": [
+                {
+                    "description": null,
+                    "key_topics": [],
+                    "learning_objectives": [],
+                    "pedagogical_approach": [
+                        {
+                            "content": {
+                                "title": null,
+                                "body": []
+                            },
+                            "activities": [
+                                {
+                                    "topic": null,
+                                    "purpose": null,
+                                    "explantation": [],
+                                    "structure": [
+                                        {
+                                            "columns": [],
+                                            "rows": []
+                                        },
+                                        {
+                                            "questions": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "unit_evaluation": {
+                        "body": [],
+                        "questions": {
+                            "options": [
+                                {"text": null, "right": false}
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
