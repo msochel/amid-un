@@ -12,6 +12,7 @@ omega | pepper-grinder | redmond | rocket | south-street | start | trontastic
 voclain */
 import 'primereact/resources/themes/redmond/theme.css';
 
+import json from './data/modules';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App data={json}/>, document.getElementById('root'));
 registerServiceWorker();
