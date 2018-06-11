@@ -5,22 +5,25 @@ import Module from './Module';
 
 class Content extends Component {
 
+  constructor(props){
+    super(props);
+    this.data = props.data
+  }
+
   render() {
+    const { modules } = this.data;
     return (
       <div>
         <Accordion activeIndex={0}>
-          <AccordionTab header="Módulo 1">
-            <Module description="Descripción del Módulo 1" />
-          </AccordionTab>
-          <AccordionTab header="Módulo 2">
-            <Module description="Descripción del Módulo 2" />
-          </AccordionTab>
-          <AccordionTab header="Módulo 3">
-            <Module description="Descripción del Módulo 3" />
-          </AccordionTab>
-          <AccordionTab header="Módulo 4">
-            <Module description="Descripción del Módulo 4" />
-          </AccordionTab>
+        {
+          modules.map(function(module_data, index){
+            return (
+              <AccordionTab key={index} header={"Módulo " + (index + 1)}>
+                <Module data={module_data} index={index + 1} />
+              </AccordionTab>
+            )
+          })
+        }
         </Accordion>
       </div>
     );

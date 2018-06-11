@@ -1,56 +1,57 @@
-import React from 'react';
-import { List, Embed, Tab, Dropdown } from 'semantic-ui-react'
+import React, { Component } from 'react';
 
-const options = [
-  { key: 'angular', text: 'Angular', value: 'angular' },
-  { key: 'css', text: 'CSS', value: 'css' },
-  { key: 'design', text: 'Graphic Design', value: 'design' },
-  { key: 'ember', text: 'Ember', value: 'ember' },
-  { key: 'html', text: 'HTML', value: 'html' },
-  { key: 'ia', text: 'Information Architecture', value: 'ia' },
-  { key: 'javascript', text: 'Javascript', value: 'javascript' },
-]
+import {TabView,TabPanel} from 'primereact/components/tabview/TabView';
+import {Panel} from 'primereact/components/panel/Panel';
 
-const DropdownExampleMultipleSelection = (
-  <Dropdown placeholder='Lenguajes' fluid multiple selection options={options} />
-)
 
-const ListExampleBulleted = (
-  <List bulleted>
-    <List.Item>Programación voraz</List.Item>
-    <List.Item>Programación dinámica</List.Item>
-    <List.Item>Backtracking</List.Item>
-  </List>
-)
+class Material extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      data: props.data,
+      unit_index: props.unit_index,
+      module: props.module
+    }
+  }
 
-const EmbedExampleYouTube = (
-  <Embed
-    id='ZwIE2KV8g1A'
-    source='youtube'
-  />
-)
+  render(){
+    const { data, unit_index, module } = this.state
+    console.log(data)
+    return (
+      <div>
+        <Panel>
+          <h2><i>Unidad {unit_index}:</i> {data.description}</h2>
+        </Panel>
+        <TabView>
+          <TabPanel header="Temas clave"  leftIcon="fa-calendar">
+          {
+            data.key_topics.map(function(val, index){
+              return (
+                <Panel><i>{index + 1}.</i> {val}</Panel>
+              )
+            })
+          }
+          </TabPanel>
+          <TabPanel header="Objetivos"  rightIcon="fa-print">
+          {
+            data.learning_objectives.map(function(val, index){
+              return (
+                <Panel><i>{index + 1}.</i> {val}</Panel>
+              )
+            })
+          }
+          </TabPanel>
+          <TabPanel header="Actividades"  leftIcon="fa-bell-o" rightIcon="fa-bookmark-o">
 
-const panes = [
-  {
-    menuItem: { key: 'users', icon: 'browser', content: 'Temas' },
-    render: () => <Tab.Pane>{ListExampleBulleted}</Tab.Pane>,
-  },
-  {
-    menuItem: {key: 'film', icon: 'film', content: 'Metodología'},
-    render: () => <Tab.Pane>{EmbedExampleYouTube}</Tab.Pane>,
-  },
-  {
-    menuItem: {key: 'pencil', icon: 'pencil', content: 'Actividades'},
-    render: () => <Tab.Pane>Seleccione la opción/es correcta {DropdownExampleMultipleSelection}</Tab.Pane>,
-  },
-  {
-    menuItem: {key: 'question', icon: 'question', content: 'Evaluación'},
-    render: () => <Tab.Pane>Zona evaluativa</Tab.Pane>,
-  },
-]
+          </TabPanel>
+          <TabPanel header="Evaluación"  leftIcon="fa-bell-o" rightIcon="fa-bookmark-o">
 
-const TabExampleCustomMenuItem = () => (
-  <Tab panes={panes} />
-)
+          </TabPanel>
+        </TabView>
+      </div>
+      
+    )
+  }
+}
 
-export default TabExampleCustomMenuItem
+export default Material

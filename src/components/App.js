@@ -2,20 +2,26 @@ import React, { Component } from 'react';
 
 import Content from './Content'
 import Header from './Header'
-import Material from './Material'
 
 class App extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      data: props.data
+    }
+  }
 
   render() {
     return (
       <div>
         <Header />
         <div className="ui-g">
-          <div className="ui-g-12 ui-md-4">
-            <Content />
+          <div id="content" className="ui-g-12 ui-md-4">
+            <Content data={this.state.data} />
           </div>
-          <div className="ui-g-12 ui-md-8 ui-g-nopad">
-            <Material />
+          <div id="material" className="ui-g-12 ui-md-8">
+            Mensaje de bienvenida(?)
           </div>
           <div className="ui-g-12">
             Footer
