@@ -31,10 +31,10 @@ class Unit extends Component {
     return (
       <div className='ui-g'>
         {data.description}
-        <div className='ui-g-8'>
+        <div className='ui-g-12 ui-lg-8'>
           <ProgressBar value={progress}></ProgressBar>
         </div>
-        <div className='ui-g-4'>
+        <div className='ui-g-12 ui-lg-4' align='right'>
           <Button onClick={this.onClickHandler} label='Continuar'/>
         </div>
       </div>
