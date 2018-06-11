@@ -14,7 +14,7 @@ class Unit extends Component {
       data: props.data,
       index: props.index,
       module: props.module,
-      progress: 50
+      progress: 60
     }
   }
 

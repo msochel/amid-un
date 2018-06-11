@@ -4,21 +4,14 @@ import {Panel} from 'primereact/components/panel/Panel';
 
 
 class ThematicContent extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      data: props.data
-    }
-  }
   render(){
-    const { data } = this.state
     return (
       <div>
         <Panel>
-          <h2>{data.content.title}</h2>
+          <h2>{this.props.data.content.title}</h2>
           {
-            data.content.body.map(function(val, index){
-              if (typeof(val) == 'string') {
+            this.props.data.content.body.map(function(val, index){
+              if (typeof(val) === 'string') {
                 return <p key={index}>{val}</p>
               } else {
                 return (
@@ -35,10 +28,9 @@ class ThematicContent extends Component {
           }
         </Panel>
       </div>
-      
+
     )
   }
 }
-  
+
 export default ThematicContent
-  
