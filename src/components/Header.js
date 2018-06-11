@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 import {Button} from 'primereact/components/button/Button';
-import {FileUpload} from 'primereact/components/fileupload/FileUpload';
 import {Menu} from 'primereact/components/menu/Menu';
 import {Sidebar} from 'primereact/components/sidebar/Sidebar';
 import {Toolbar} from 'primereact/components/toolbar/Toolbar';
