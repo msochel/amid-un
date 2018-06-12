@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import ReactDOM from 'react-dom'
 import {Panel} from 'primereact/components/panel/Panel';
 import {Steps} from 'primereact/components/steps/Steps';
 import {TabView,TabPanel} from 'primereact/components/tabview/TabView';
@@ -14,7 +14,7 @@ class Material extends Component {
       data: props.data,
       unit_index: props.unit_index,
       module: props.module,
-      activeIndex: 0
+      activeIndex: 0,
     }
     this.stepItems = []
     this.state.data.pedagogical_approach.map((v, i) => {
@@ -29,6 +29,7 @@ class Material extends Component {
 
   render(){
     const { data, unit_index, activeIndex } = this.state
+    console.log(this.state.activeIndex)
     return (
       <div>
         <Panel>
@@ -53,19 +54,30 @@ class Material extends Component {
             })
           }
           </TabPanel>
-          <TabPanel header="Contenido temático"  leftIcon="fa-bell-o"
-            rightIcon="fa-bookmark-o">
-            <ThematicContent data={data.pedagogical_approach[activeIndex]} />
-            <Steps model={this.stepItems} activeIndex={activeIndex}
-              className="steps-custom" readOnly={false} />
-          </TabPanel>
-          <TabPanel header="Evaluación"  leftIcon="fa-bell-o"
-            rightIcon="fa-bookmark-o">
-
+            <TabPanel
+              header="Contenido temático"
+              leftIcon="fa-bell-o"
+              rightIcon="fa-bookmark-o"
+            >
+              <ThematicContent
+                  data={data.pedagogical_approach[activeIndex]}
+              />
+              <Steps
+                  model={this.stepItems}
+                  activeIndex={activeIndex}
+                  className="steps-custom"
+                  readOnly={false}
+              />
+            </TabPanel>
+            <TabPanel
+              header="Evaluación"
+              leftIcon="fa-bell-o"
+              rightIcon="fa-bookmark-o"
+            >
           </TabPanel>
         </TabView>
       </div>
-      
+
     )
   }
 }
