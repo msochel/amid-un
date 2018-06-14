@@ -24,7 +24,7 @@ class Module extends Component {
         {
           units.map(function(unit_data, index){
             return (
-              <AccordionTab key={index} header={"Hpta" + (index + 1)}>
+              <AccordionTab key={index} header={"Unidad " + (index + 1)}>
                 <Unit
                   data={unit_data} index={index + 1}
                   module={{

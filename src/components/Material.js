@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom'
 import {Panel} from 'primereact/components/panel/Panel';
 import {Steps} from 'primereact/components/steps/Steps';
 import {TabView,TabPanel} from 'primereact/components/tabview/TabView';
@@ -17,6 +16,7 @@ class Material extends Component {
       activeIndex: 0,
     }
     this.stepItems = []
+    // eslint-disable-next-line
     this.state.data.pedagogical_approach.map((v, i) => {
       this.stepItems.push({
         label: null,
