@@ -11,7 +11,6 @@ class Module extends Component {
       data: props.data,
       index: props.index
     }
-    console.log(this.state.data.units[0])
   }
 
   render() {

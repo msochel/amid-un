@@ -30,7 +30,6 @@ class Material extends Component {
 
   render(){
     const { data, unit_index, activeIndex } = this.state
-    console.log(data.unit_evaluation.body)
     return (
       <div>
         <Panel>
