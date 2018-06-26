@@ -4,6 +4,7 @@ import {Steps} from 'primereact/components/steps/Steps';
 import {TabView,TabPanel} from 'primereact/components/tabview/TabView';
 
 import ThematicContent from './ThematicContent';
+import Evaluation from './Evaluation';
 
 
 class Material extends Component {
@@ -29,7 +30,7 @@ class Material extends Component {
 
   render(){
     const { data, unit_index, activeIndex } = this.state
-    console.log(this.state.activeIndex)
+    console.log(data.unit_evaluation.body)
     return (
       <div>
         <Panel>
@@ -74,6 +75,8 @@ class Material extends Component {
               leftIcon="fa-bell-o"
               rightIcon="fa-bookmark-o"
             >
+            <Evaluation data={data.unit_evaluation}/>
+            Hpta
           </TabPanel>
         </TabView>
       </div>

@@ -16,6 +16,7 @@ class Unit extends Component {
       module: props.module,
       progress: 60
     }
+    console.log(this.state.data)
   }
 
   onClickHandler = (e) => {

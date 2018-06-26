@@ -10,6 +10,7 @@ class App extends Component {
     this.state = {
       data: props.data
     }
+    console.log(this.state.data)
   }
 
   render() {
