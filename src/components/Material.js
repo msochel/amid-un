@@ -76,7 +76,6 @@ class Material extends Component {
               rightIcon="fa-bookmark-o"
             >
             <Evaluation data={data.unit_evaluation}/>
-            Hpta
           </TabPanel>
         </TabView>
       </div>

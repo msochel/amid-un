@@ -11,7 +11,6 @@ class CheckAnswer extends Component {
     }
 
     onAnswerChange = (e) => {
-        console.log("mierdaaa")
         var selectedAnswers = [...this.state.answers];
         if(e.checked)
             selectedAnswers.push(e.value);
@@ -28,7 +27,6 @@ class CheckAnswer extends Component {
         </div>
         {
           this.props.data.questions.options.map(function(val, index){
-            console.log(val.text);
             return (
               <div className="ui-g-12">
                 <Checkbox key={index} value={val.text}></Checkbox>
