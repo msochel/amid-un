@@ -27,16 +27,23 @@ class Material extends Component {
     })
   }
 
+  componentWillReceiveProps = (props) => {
+    this.setState({
+      data: props.data,
+      unit_index: props.unit_index,
+      module: props.module
+    })
+  }
+
   render(){
     const { data, unit_index, activeIndex } = this.state
-    console.log(this.state.activeIndex)
     return (
       <div>
         <Panel>
           <h2><i>Unidad {unit_index}:</i> {data.description}</h2>
         </Panel>
         <TabView>
-          <TabPanel header="Temas clave"  leftIcon="fa-calendar">
+          <TabPanel header="Temas clave"  leftIcon="far fa-list-alt">
           {
             data.key_topics.map(function(val, index){
               return (
@@ -45,7 +52,7 @@ class Material extends Component {
             })
           }
           </TabPanel>
-          <TabPanel header="Objetivos"  rightIcon="fa-print">
+          <TabPanel header="Objetivos"  leftIcon="fas fa-bullseye">
           {
             data.learning_objectives.map(function(val, index){
               return (
@@ -56,8 +63,8 @@ class Material extends Component {
           </TabPanel>
             <TabPanel
               header="Contenido temático"
-              leftIcon="fa-bell-o"
-              rightIcon="fa-bookmark-o"
+              leftIcon="fas fa-book"
+              // rightIcon="fa-bookmark-o"
             >
               <ThematicContent
                   data={data.pedagogical_approach[activeIndex]}
@@ -71,8 +78,7 @@ class Material extends Component {
             </TabPanel>
             <TabPanel
               header="Evaluación"
-              leftIcon="fa-bell-o"
-              rightIcon="fa-bookmark-o"
+              leftIcon="fas fa-question"
             >
           </TabPanel>
         </TabView>
