@@ -35,34 +35,7 @@
                                     ]
                                 ]
                             },
-                            "activities": [
-                                {
-                                    "topic": "Definición de «información» y «medios»",
-                                    "purpose": "Explorar los roles en una variedad de medios de información.",
-                                    "explantation": [
-                                        "Utilice la definición de medios que se expone en la lectura Los múltiples papeles de los medios, y a partir de ella haga una lista de los medios que están presentes en las vidas de los estudiantes y profesores en la actualidad. Luego, elija algunos de los medios que ha identificado para determinar cuáles son los roles y funciones claves que estos medios desempeñan, utilizando para ello la tabla que se muestra a continuación.",
-                                        "Por ejemplo, si el primer medio que eligió es un periódico cultural de su municipio, que tiene como función informar a la audiencia sobre un actividades culturales, ponga el nombre del periódico en la casilla que dice «Medio 1» y marque el círculo frente al rol que dice «Canal de información»."
-                                    ],
-                                    "structure": [
-                                        {
-                                            "columns": [
-                                                "Medio 1", "Medio 2",
-                                                "Medio 4", "Medio 4"
-                                            ],
-                                            "rows": [
-                                                "Canal de información",
-                                                "Facilitador debates informados",
-                                                "Canal de conocimiento",
-                                                "Autoconocimiento y construcción de sentido de comunidad",
-                                                "Fiscalización del gobiernos",
-                                                "Facilitador de los procesos democráticos",
-                                                "Vehículos para la expresión y la cohesión cultural",
-                                                "Defensor o actor social de su propio derecho"
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
+                            "activities": [ "m01u01a01" ]
                         },
                         {
                             "content": {
@@ -85,52 +58,7 @@
                                     ]
                                 ]
                             },
-                            "activities": [
-                                {
-                                    "topic": "Definición de «información» y «medios»",
-                                    "purpose": "Explorar los roles en una variedad de textos de información.",
-                                    "explantation": [
-                                        "Utilice la descripción sobre proveedores de información que se expone en la lectura  Información sobre los proveedores, y a partir de ella» seleccione algunas de ellos a  su elección. Luego, procure determinar, utilizando la tabla que se muestra a continuación, qué papel cumplen éstos.",
-                                        "Por ejemplo: Si uno de los proveedores de información que eligió es un Youtuber  (proveedor de videos sobre un tema específico en la plataforma YOUTUBE) que  ofrece videos sobre temas de matemáticas para el nivel de secundaria, ponga el  nombre del proveedor en la casilla que dice «Proveedor 1» y marque el círculo frente  al rol que dice «Facilitar los procesos de enseñanza y aprendizaje»."
-                                    ],
-                                    "structure": [
-                                        {
-                                            "columns": [
-                                                "Proveedor 1", "Proveedor 2",
-                                                "Proveedor 4", "Proveedor 4"
-                                            ],
-                                            "rows": [
-                                                "Informar",
-                                                "Educar",
-                                                "Facilitar los procesos de enseñanza y aprendizaje Proveer acceso a todos los tipos de información (a menudo libre de costos, plural, confiable y sin restricciones)",
-                                                "Servir como una puerta hacia la información",
-                                                "Promover los valores universales y los derechos civiles tales como libertad de expresión e información",
-                                                "Servir como memoria colectiva de la sociedad Recolectar información",
-                                                "Conservar el patrimonio cultural",
-                                                "Entretener"
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "topic": "Importancia de los medios y otros proveedores de información",
-                                    "purpose": "Explorar el papel de los medios y otros proveedores de información tales como bibliotecas, archivos e Internet",
-                                    "explantation": [
-                                        "Haga una inspección de algunas bibliotecas de colegios/universidades o bibliotecas  públicas para encontrar libros y otros recursos disponibles que según su criterio  provean información sobre democracia, sobre otros lugares del mundo, sobre distintas culturas o sobre la vida social y económica, etc.",
-                                        "Para estas bibliotecas inspeccionadas, consulte y responda las siguientes preguntas:"
-                                    ],
-                                    "structure": [
-                                        {
-                                            "questions": [
-                                                "¿Quién decide qué libros deben ser incluidos en la biblioteca y cuáles deben ser excluidos?",
-                                                "¿Quién decide que recursos y con qué nivel deben ser asignados a las bibliotecas?",
-                                                "¿Quién decide qué libros son más importantes que otros?",
-                                                "¿Las bibliotecas cumplen son sus propósitos?"
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
+                            "activities": [ "m01u01a02", "m01u01a03" ]
                         },
                         {
                             "content": {
@@ -147,19 +75,7 @@
                                     "Más allá, AMI debería estimular a que los ciudadanos se conviertan en productores activos de información e innovadores de los medios y productos de información, así como que sean pensadores críticos. AMI debería incentivar que usen los medios nuevos y tradicionales para la auto-expresión, creatividad y mayor participación en la democracia de sus países y en la red de información a nivel global."
                                 ]
                             },
-                            "activities": [
-                                {
-                                    "topic": null,
-                                    "purpose": null,
-                                    "explantation": [],
-                                    "structure": [
-                                        {
-                                            "columns": [],
-                                            "rows": []
-                                        }
-                                    ]
-                                }
-                            ]
+                            "activities": []
                         }
                     ],
                     "unit_evaluation": {
