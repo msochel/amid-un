@@ -23,8 +23,6 @@ class ThematicContent extends Component {
 
   render(){
     const { content, activities } = this.state;
-    console.log(content)
-    console.log(activities)
     return (
       <div>
         <Panel>
@@ -32,13 +30,13 @@ class ThematicContent extends Component {
           {
             content.body.map(function(val, index){
               if (typeof(val) === 'string') {
-                return <p key={index}>{val}</p>
+                return <p key={index} align='justify'>{val}</p>
               } else {
                 return (
                   <ul key={index}>
                     {
                       val.map(function(v, i){
-                        return <li key={i}>{v}</li>
+                        return <li key={i} align='justify'>{v}</li>
                       })
                     }
                   </ul>
