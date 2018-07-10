@@ -1,11 +1,16 @@
 // ./main.js
 const {app, BrowserWindow} = require('electron')
+var path = require('path')
 
 let win = null;
 
 function createWindow() {
   // Initialize the window to our specified dimensions
-  win = new BrowserWindow({width: 1000, height: 600});
+  win = new BrowserWindow({
+    width: 1281,
+    height: 800,
+    icon: path.join(__dirname, 'assets/icons/icon_64x64.png')
+  });
 
   // Specify entry point
   win.loadURL('http://localhost:3000');
