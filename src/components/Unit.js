@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
 
-import {ProgressBar} from 'primereact/components/progressbar/ProgressBar';
 import {Button} from 'primereact/components/button/Button';
+import {ProgressBar} from 'primereact/components/progressbar/ProgressBar';
+import {Growl} from 'primereact/components/growl/Growl';
 
 import Material from './Material';
 
@@ -37,6 +38,10 @@ class Unit extends Component {
   }
 
   approve = () => {
+    this.growl.show({
+      severity: 'success', summary: '¡Felicidades!',
+      detail: 'Has completado la unidad'.concat(' ', this.state.index)
+    });
     let new_topics_progress = Array.from(this.state.topics_progress);
     new_topics_progress[new_topics_progress.length - 1] = true
     this.setState({
@@ -59,6 +64,7 @@ class Unit extends Component {
     const { data, progress } = this.state
     return (
       <div className='ui-g'>
+        <Growl ref={(el) => this.growl = el} />
         {data.description}
         <div className='ui-g-12 ui-lg-8'>
           <ProgressBar value={progress}></ProgressBar>

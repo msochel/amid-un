@@ -73,21 +73,21 @@ class Material extends Component {
             // rightIcon="fa-bookmark-o"
           >
             
-            <ThematicContent
-                data={data.pedagogical_approach[activeIndex]}
-            />
             <Steps
                 model={this.stepItems}
                 activeIndex={activeIndex}
                 className="steps-custom"
                 readOnly={false}
             />
+            <ThematicContent
+                data={data.pedagogical_approach[activeIndex]}
+            />
           </TabPanel>
           <TabPanel disabled = { activeIndex < data.key_topics.length - 1 }
             header="Evaluación"
             leftIcon="fas fa-question"
           >
-            <Evaluation data={data.unit_evaluation} />
+            <Evaluation data={data.unit_evaluation} approve={this.approve} />
           </TabPanel>
         </TabView>
       </div>
