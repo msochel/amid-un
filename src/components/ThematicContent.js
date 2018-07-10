@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import {Panel} from 'primereact/components/panel/Panel';
+import {ScrollPanel} from 'primereact/components/scrollpanel/ScrollPanel';
 import {Accordion,AccordionTab} from 'primereact/components/accordion/Accordion';
 
 
@@ -25,6 +26,7 @@ class ThematicContent extends Component {
     const { content, activities } = this.state;
     return (
       <div>
+        <ScrollPanel style={{width: '100%', height: '500px'}}>
         <Panel>
           <h2>{content.title}</h2>
           {
@@ -45,6 +47,7 @@ class ThematicContent extends Component {
             })
           }
         </Panel>
+        </ScrollPanel>
         {
           activities.length > 0 &&
           <div>

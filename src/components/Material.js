@@ -10,6 +10,8 @@ import Evaluation from './Evaluation';
 class Material extends Component {
   constructor(props){
     super(props);
+    this.completeTopic = props.completeTopic
+    this.approve = props.approve
     this.state = {
       data: props.data,
       unit_index: props.unit_index,
@@ -23,6 +25,7 @@ class Material extends Component {
         label: null,
         command: (e) => {
           this.setState({activeIndex:i});
+          if (i) this.completeTopic(i - 1)
         }
       })
     })
@@ -43,7 +46,9 @@ class Material extends Component {
         <Panel>
           <h2><i>Unidad {unit_index}:</i> {data.description}</h2>
         </Panel>
-        <TabView>
+        <TabView onTabChange={(e) => {
+          this.completeTopic(activeIndex)
+        }}>
           <TabPanel header="Temas clave"  leftIcon="far fa-list-alt">
           {
             data.key_topics.map(function(val, index){
@@ -62,26 +67,27 @@ class Material extends Component {
             })
           }
           </TabPanel>
-            <TabPanel
-              header="Contenido temático"
-              leftIcon="fas fa-book"
-              // rightIcon="fa-bookmark-o"
-            >
-              <ThematicContent
-                  data={data.pedagogical_approach[activeIndex]}
-              />
-              <Steps
-                  model={this.stepItems}
-                  activeIndex={activeIndex}
-                  className="steps-custom"
-                  readOnly={false}
-              />
-            </TabPanel>
-            <TabPanel
-              header="Evaluación"
-              leftIcon="fas fa-question"
-            >
-            <Evaluation data={data.unit_evaluation}/>
+          <TabPanel
+            header="Contenido temático"
+            leftIcon="fas fa-book"
+            // rightIcon="fa-bookmark-o"
+          >
+            
+            <ThematicContent
+                data={data.pedagogical_approach[activeIndex]}
+            />
+            <Steps
+                model={this.stepItems}
+                activeIndex={activeIndex}
+                className="steps-custom"
+                readOnly={false}
+            />
+          </TabPanel>
+          <TabPanel disabled = { activeIndex < data.key_topics.length - 1 }
+            header="Evaluación"
+            leftIcon="fas fa-question"
+          >
+            <Evaluation data={data.unit_evaluation} />
           </TabPanel>
         </TabView>
       </div>

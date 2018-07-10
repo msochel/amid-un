@@ -10,18 +10,47 @@ class Unit extends Component {
 
   constructor(props){
     super(props);
+    let topics = props.data.key_topics.map((x, i) => {
+      return false
+    })
+    topics.push(false)
     this.state = {
       data: props.data,
+      topics_progress: topics,
       index: props.index,
       module: props.module,
-      progress: 60
+      progress: topics.filter(( x ) => {
+        return x
+      }).length * 100 / topics.length,
     }
+  }
+
+  completeTopic = (T) => {
+    let new_topics_progress = Array.from(this.state.topics_progress);
+    new_topics_progress[T] = true
+    this.setState({
+      topics_progress: new_topics_progress,
+      progress: new_topics_progress.filter(( x ) => {
+        return x
+      }).length * 100 / this.state.topics_progress.length
+    })
+  }
+
+  approve = () => {
+    let new_topics_progress = Array.from(this.state.topics_progress);
+    new_topics_progress[new_topics_progress.length - 1] = true
+    this.setState({
+      topics_progress: new_topics_progress,
+      progress: new_topics_progress.length * 100
+      / this.state.topics_progress.length
+    })
   }
 
   onClickHandler = (e) => {
     const { data, index, module } = this.state
     ReactDOM.render(
-      <Material data={data} module={module} unit_index={index} />,
+      <Material data={data} module={module} unit_index={index}
+      completeTopic={this.completeTopic} approve={this.approve} />,
       document.getElementById('material')
     );
   }

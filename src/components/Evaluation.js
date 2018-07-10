@@ -7,11 +7,11 @@ import {ScrollPanel} from 'primereact/components/scrollpanel/ScrollPanel';
 
 class Evaluation extends Component {
     constructor(props) {
-        super(props);
-        this.state = {
-          data: props.data,
-          answers: Array(props.data.questions.options.length).fill(false)
-        };
+      super(props);
+      this.state = {
+        data: props.data,
+        answers: Array(props.data.questions.options.length).fill(false)
+      };
     }
 
     onAnswerChange = (e) => {
