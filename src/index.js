@@ -13,5 +13,6 @@ import 'primereact/resources/themes/kasper/theme.css';
 
 import json from './data/modules';
 
+localStorage.clear();
 ReactDOM.render(<App data={json}/>, document.getElementById('root'));
 registerServiceWorker();
