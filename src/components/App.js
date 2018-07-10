@@ -23,9 +23,6 @@ class App extends Component {
           <div id="material" className="ui-g-12 ui-md-8">
             Mensaje de bienvenida(?)
           </div>
-          <div className="ui-g-12">
-            Footer
-          </div>
         </div>
       </div>
     );

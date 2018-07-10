@@ -52,7 +52,7 @@ class ThematicContent extends Component {
             {
               activities.map((v, i) => {
                 return (
-                  <Accordion>
+                  <Accordion key={i}>
                     <AccordionTab header={"Actividad".concat(i + 1)}>
                     <div width="100%" height="315">
                       <object data={require("./../data/activities/".concat(v, ".pdf"))}
