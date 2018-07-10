@@ -5,7 +5,7 @@ import {Panel} from 'primereact/components/panel/Panel';
 import {ScrollPanel} from 'primereact/components/scrollpanel/ScrollPanel';
 
 
-class CheckAnswer extends Component {
+class Evaluation extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -36,8 +36,8 @@ class CheckAnswer extends Component {
               {
                 data.questions.options.map((val, index) => {
                   return (
-                    <div>
-                      <Checkbox key={index} value={index} onChange={this.onAnswerChange}
+                    <div key={index}>
+                      <Checkbox value={index} onChange={this.onAnswerChange}
                       checked={answers[index]}>{val.text}</Checkbox>
                       <label htmlFor={index}>{val.text}</label>
                     </div>
@@ -52,4 +52,4 @@ class CheckAnswer extends Component {
     }
 }
 
-export default CheckAnswer
+export default Evaluation
