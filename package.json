@@ -14,7 +14,7 @@
     "react-scripts": "1.1.4",
     "react-transition-group": "^2.3.1"
   },
-  "main": "main.js",
+  "main": "electron_app.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
