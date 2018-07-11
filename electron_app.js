@@ -9,7 +9,7 @@ function createWindow() {
   win = new BrowserWindow({
     width: 1281,
     height: 800,
-    icon: path.join(__dirname, 'assets/icons/icon_64x64.png')
+    icon: path.join(__dirname, 'assets/icons/icon.ico'),
   });
 
   // Specify entry point
